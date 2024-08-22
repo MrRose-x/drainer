@@ -5,65 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TON Smart Contract Test</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        p {
-            color: #666;
-            margin-bottom: 40px;
-            text-align: center;
-            max-width: 600px;
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            margin-top: 50px;
-            color: #999;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+        /* Your CSS styling here */
     </style>
 </head>
 <body>
     <h1>Test Your TON Smart Contract</h1>
     <p>
         Click the button below to connect your wallet and interact with your smart contract on the TON Testnet.
-        This action will redirect you to your wallet app (e.g., TON Keeper) to approve the transaction.
     </p>
     <button id="connectWallet">Connect Wallet</button>
 
@@ -73,10 +21,8 @@
 
     <script>
         document.getElementById('connectWallet').onclick = async () => {
-            alert('Redirecting to your wallet...');
-
             // Replace with your actual smart contract address
-            const contractAddress = '0:EQBvL1b1vvi-yXP_leOiX3tsOBawWItXOf9FmB0xCl6chsx5';
+            const contractAddress = 'EQBvL1b1vvi-yXP_leOiX3tsOBawWItXOf9FmB0xCl6chsx5';
 
             // Generate the TON Keeper URL
             const tonKeeperUrl = `https://app.tonkeeper.com/transfer/${contractAddress}?amount=0&text=Call+contract`;
